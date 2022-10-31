@@ -1,0 +1,285 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.header-home {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #233559;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.main-menu {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: #233559;
+}
+
+.main-menu li {
+  list-style: none;
+}
+
+.main-menu a {
+  outline: none;
+  text-decoration: none;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-menu {
+  padding: 0 16px;
+  line-height: 70px;
+  display: block;
+  color: white;
+}
+
+.link-menu:hover {
+  box-shadow: 0 -5px 0 0 #e91827 inset;
+  /* transform: scale(0.95); */
+  transition: 0.5s all ease-in-out;
+}
+
+.hero {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../images/hero.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 70vh;
+  z-index: 2;
+  background-image: url(../images/svg/marco-mot-linea.svg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100%;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 54px;
+  height: 70vh;
+  z-index: 2;
+  background-image: url(../images/svg/marco-mot-lineas-2.svg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100%;
+}
+
+.content-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-hero h1 {
+  width: 70%;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.content-hero p {
+  width: 80%;
+  font-size: 1.17rem;
+  font-weight: 400;
+}
+
+.line-hero {
+  height: 16px;
+  position: relative;
+  background-color: #233559;
+}
+
+.line-hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 16px;
+  z-index: 2;
+  background-image: url(../images/svg/marco-bot-1.svg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100%;
+}
+
+.line-hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 54px;
+  height: 16px;
+  z-index: 2;
+  background-image: url(../images/svg/marco-bot-2.svg);
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100%;
+  background-color: #fff;
+}
+
+.information {
+  height: 30%;
+  padding-top: 50px;
+  padding-bottom: 95px;
+  background-color: #f2f2f2;
+}
+
+.information-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-section {
+  margin-bottom: 65px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #e91827;
+}
+
+.information-message {
+  display: flex;
+  align-items: center;
+}
+
+.message-image {
+  width: 50%;
+  height: 200px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-image img {
+  width: 50%;
+}
+
+.message-text {
+  width: 50%;
+  margin-left: 30px;
+}
+
+.message-text h3 {
+  color: #233559;
+  font-size: 1.45rem;
+}
+
+.message-text p {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.services-content {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.services-content .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.services-content .container .box-services {
+  width: 25%;
+  padding: 2rem;
+}
+
+.container .box-services .box-image-services {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: auto;
+  margin-bottom: 25px;
+  transition: 0.4s all ease-in-out;
+  border: 1px white solid;
+  cursor: pointer;
+}
+
+.container .box-services p {
+  line-height: 25px;
+}
+
+.container .box-services .box-image-services:hover {
+  box-shadow: 0 20px 40px -20px rgba(78, 114, 223, 0.5);
+  border: 1px #233559 solid;
+}
+
+.container .box-services .box-image-services img {
+  max-width: 160px;
+}
+
+.container .box-services .title-services {
+  margin-bottom: 1rem;
+  color: #233559;
+  text-align: center;
+}
+
+footer {
+  height: 174px;
+  background-color: #e91827;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
